@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Math Functions</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Functions</h1>
+        <p>Explore String and Math functions interactively</p>
+    </header>
+
+    <main>
+        <!-- String Functions -->
+        <section class="card">
+            <h2>String Functions</h2>
+
+            <label for="textInput">Enter a string:</label>
+            <input type="text" id="textInput"
+                   placeholder="Example: great power comes great burden">
+
+            <label for="wordInput">Enter a word to search or replace:</label>
+            <input type="text" id="wordInput"
+                   placeholder="Example: burden">
+
+            <label for="replaceInput">Replacement word:</label>
+            <input type="text" id="replaceInput"
+                   placeholder="Example: resposibility">
+
+            <div class="buttons">
+                <button onclick="stringLength()">Length</button>
+                <button onclick="occurrences()">First / Last Occurrence</button>
+                <button onclick="searchWord()">Search Word</button>
+                <button onclick="sliceText()">Slice</button>
+                <button onclick="substringText()">Substring</button>
+                <button onclick="substrText()">Substr</button>
+                <button onclick="replaceWord()">Replace</button>
+                <button onclick="upperCase()">Uppercase</button>
+                <button onclick="lowerCase()">Lowercase</button>
+            </div>
+
+            <div class="result" id="stringResult">
+                Results will appear here.
+            </div>
+        </section>
+
+        <!-- Math Functions -->
+        <section class="card">
+            <h2>Math Functions</h2>
+
+            <label for="num1">First number:</label>
+            <input type="number" id="num1" placeholder="Enter a number">
+
+            <label for="num2">Second number:</label>
+            <input type="number" id="num2" placeholder="Enter a number">
+
+            <label for="angle">Angle in degrees:</label>
+            <input type="number" id="angle" value="30">
+
+            <div class="buttons">
+                <button onclick="power()">Power</button>
+                <button onclick="squareRoot()">Square Root</button>
+                <button onclick="roundValue()">Round</button>
+                <button onclick="ceilValue()">Ceiling</button>
+                <button onclick="floorValue()">Floor</button>
+                <button onclick="absoluteValue()">Absolute</button>
+                <button onclick="sineValue()">Sine</button>
+                <button onclick="cosineValue()">Cosine</button>
+                <button onclick="minValue()">Minimum</button>
+                <button onclick="maxValue()">Maximum</button>
+                <button onclick="randomValue()">Random Number</button>
+            </div>
+
+            <div class="result" id="mathResult">
+                Results will appear here.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript String and Math Functions Demonstration</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
